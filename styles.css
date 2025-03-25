@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFFFFBFF; /* Light background */
+    color: #1C1B1E; /* Light onBackground */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #E91E63; /* Light primary */
+    color: white; /* Light onPrimary */
     padding: 1em 0;
     text-align: center;
 }
@@ -24,7 +24,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: white; /* Light onPrimary */
     text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ main {
 }
 
 .hero {
-    background: #e9f5e9;
+    background: #FFD9E3; /* Light primaryContainer */
     padding: 2em;
     border-radius: 8px;
     text-align: center;
@@ -55,32 +55,32 @@ main {
 }
 
 .feature h3 {
-    color: #4CAF50;
+    color: #E91E63; /* Light primary */
 }
 
 .button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #9C27B0; /* Light secondary */
+    color: white; /* Light onSecondary */
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 4px;
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #FFABF4; /* Dark secondary */
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1C1B1E; /* Dark background */
+    color: #E6E1E6; /* Dark onBackground */
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
 .list-group-item a {
-    color: #4CAF50;
+    color: #E91E63; /* Light primary */
     text-decoration: none;
 }
