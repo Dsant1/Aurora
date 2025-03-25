@@ -4,41 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-5">
         <h1>Aurora App</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="download.html">Download</a></li>
-                <li><a href="documents.html">Documents</a></li>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
+                <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
+    <main class="container mt-5">
+        <section class="text-center mb-5">
             <h2>Welcome to Aurora</h2>
             <p>Aurora is an app designed to help women with functions such as menstrual calendar, community support, and more.</p>
         </section>
-        <section class="features">
-            <div class="feature">
-                <h3>About Aurora</h3>
-                <p>Learn more about what Aurora can do for you.</p>
+        <section class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">About Aurora</h3>
+                        <p class="card-text">Learn more about what Aurora can do for you.</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Download</h3>
-                <p><a href="download.html">Download the Aurora APK</a></p>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Download</h3>
+                        <p class="card-text"><a href="download.html" class="btn btn-primary">Download the Aurora APK</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Documents and Studies</h3>
-                <p><a href="documents.html">View documents and studies related to Aurora</a></p>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Documents and Studies</h3>
+                        <p class="card-text"><a href="documents.html" class="btn btn-primary">View documents and studies related to Aurora</a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="text-center bg-dark text-white py-3">
         <p>© 2025 Aurora App</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
