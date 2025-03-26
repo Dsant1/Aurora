@@ -141,8 +141,8 @@ footer {
 
 /* Chart styles */
 canvas {
-    width: 600px !important; /* O el tamaño que prefieras */
-    height: 400px !important;
+    width: 1000px !important; /* O el tamaño que prefieras */
+    height: 800px !important;
     
 }
 
