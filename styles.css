@@ -138,3 +138,8 @@ footer {
 .accordion .card-body {
     background-color: #FFD9E3; /* Light primaryContainer */
 }
+
+/* Chart styles */
+canvas {
+    margin: 20px 0;
+}
