@@ -120,6 +120,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 y: {
                     beginAtZero: true
                 }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
+                }
             }
         }
     });
@@ -141,6 +152,17 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
@@ -168,6 +190,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             var value = tooltipItem.raw;
                             var percentage = ((value / total) * 100).toFixed(2);
                             return value + ' (' + percentage + '%)';
+                        }
+                    }
+                },
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
                         }
                     }
                 }
@@ -199,6 +230,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             return value + ' (' + percentage + '%)';
                         }
                     }
+                },
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
@@ -221,6 +261,17 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
@@ -250,6 +301,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             return value + ' (' + percentage + '%)';
                         }
                     }
+                },
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
@@ -272,6 +332,17 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        boxWidth: 0,
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
