@@ -141,13 +141,15 @@ footer {
 
 /* Chart styles */
 canvas {
-    width: 1200px !important; /* O el tamaño que prefieras */
-    height: 1200px !important;
+    width: 1000px !important; /* O el tamaño que prefieras */
+    height: 1000px !important;
+    margin-top: 10px;
     
 }
 
 @media (min-width: 769px) {
     .chart-container {
+        
         width: 60%; /* O el tamaño que prefieras */
     max-width: 600px;
     margin: auto; /* Centrarlo */
