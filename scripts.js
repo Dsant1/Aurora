@@ -40,6 +40,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 y: {
                     beginAtZero: true
                 }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        font: {
+                            size: 14
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            var total = tooltipItem.dataset.data.reduce(function(a, b) { return a + b; }, 0);
+                            var value = tooltipItem.raw;
+                            var percentage = ((value / total) * 100).toFixed(2);
+                            return value + ' (' + percentage + '%)';
+                        }
+                    }
+                }
             }
         }
     });
@@ -66,6 +85,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             var value = tooltipItem.raw;
                             var percentage = ((value / total) * 100).toFixed(2);
                             return value + ' (' + percentage + '%)';
+                        }
+                    }
+                },
+                legend: {
+                    labels: {
+                        font: {
+                            size: 14
                         }
                     }
                 }
@@ -97,6 +123,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             return value + ' (' + percentage + '%)';
                         }
                     }
+                },
+                legend: {
+                    labels: {
+                        font: {
+                            size: 14
+                        }
+                    }
                 }
             }
         }
@@ -123,15 +156,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 x: {
                     ticks: {
                         maxRotation: 0,
-                        minRotation: 0
+                        minRotation: 0,
+                        callback: function(value) {
+                            return value.length > 10 ? value.substr(0, 10) + '...' : value;
+                        }
                     }
                 }
             },
             plugins: {
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -162,15 +196,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 x: {
                     ticks: {
                         maxRotation: 0,
-                        minRotation: 0
+                        minRotation: 0,
+                        callback: function(value) {
+                            return value.length > 10 ? value.substr(0, 10) + '...' : value;
+                        }
                     }
                 }
             },
             plugins: {
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -206,9 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 },
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -244,9 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 },
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -277,15 +308,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 x: {
                     ticks: {
                         maxRotation: 0,
-                        minRotation: 0
+                        minRotation: 0,
+                        callback: function(value) {
+                            return value.length > 10 ? value.substr(0, 10) + '...' : value;
+                        }
                     }
                 }
             },
             plugins: {
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -321,9 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 },
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
@@ -363,9 +393,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             plugins: {
                 legend: {
-                    display: true,
                     labels: {
-                        boxWidth: 0,
                         font: {
                             size: 14
                         }
