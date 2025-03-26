@@ -141,17 +141,18 @@ footer {
 
 /* Chart styles */
 canvas {
-    width: 400px !important; /* O el tamaño que prefieras */
-    height: 200px !important;
+    width: 600px !important; /* O el tamaño que prefieras */
+    height: 400px !important;
     
 }
 
 @media (min-width: 769px) {
     .chart-container {
-        width: 50%; /* O el tamaño que prefieras */
+        width: 60%; /* O el tamaño que prefieras */
     max-width: 600px;
     margin: auto; /* Centrarlo */
         justify-content: space-between;
+        display: flexbox;
     }
 
     .chart-container canvas {
