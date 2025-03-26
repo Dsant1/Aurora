@@ -119,6 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        maxRotation: 0,
+                        minRotation: 0
+                    }
                 }
             },
             plugins: {
@@ -152,6 +158,12 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        maxRotation: 0,
+                        minRotation: 0
+                    }
                 }
             },
             plugins: {
@@ -261,6 +273,12 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        maxRotation: 0,
+                        minRotation: 0
+                    }
                 }
             },
             plugins: {
@@ -332,6 +350,12 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        maxRotation: 0,
+                        minRotation: 0
+                    }
                 }
             },
             plugins: {
