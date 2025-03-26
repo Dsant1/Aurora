@@ -143,11 +143,17 @@ footer {
 canvas {
     margin: 20px 0;
     max-width: 100%;
-    height: auto;
+    height: 300px; /* Set a fixed height for the charts */
 }
 
 @media (min-width: 769px) {
-    canvas {
-        max-width: 50%;
+    .chart-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .chart-container canvas {
+        flex: 0 0 48%; /* Two charts per line */
     }
 }
