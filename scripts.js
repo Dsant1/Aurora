@@ -59,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -95,7 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -131,7 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -171,7 +174,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -211,7 +215,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -247,7 +252,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -283,7 +289,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -323,7 +330,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -359,7 +367,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 
@@ -399,7 +408,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 });
