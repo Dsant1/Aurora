@@ -144,12 +144,10 @@ canvas {
     width: 1000px !important; /* O el tamaño que prefieras */
     height: 1000px !important;
     
-    
 }
 
 @media (min-width: 769px) {
     .chart-container {
-        
         width: 60%; /* O el tamaño que prefieras */
     max-width: 600px;
     margin: auto; /* Centrarlo */
