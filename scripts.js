@@ -354,7 +354,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 x: {
                     ticks: {
                         maxRotation: 0,
-                        minRotation: 0
+                        minRotation: 0,
+                        callback: function(value) {
+                            return value.length > 10 ? value.substr(0, 10) + '...' : value;
+                        }
                     }
                 }
             },
