@@ -84,3 +84,38 @@ footer {
     color: #E91E63; /* Light primary */
     text-decoration: none;
 }
+
+/* Responsive styles */
+
+/* Mobile styles */
+@media (max-width: 576px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 577px) and (max-width: 768px) {
+    .feature {
+        width: 45%;
+        margin-bottom: 1em;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .feature {
+        width: 30%;
+    }
+}
