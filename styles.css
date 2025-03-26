@@ -155,5 +155,6 @@ canvas {
 
     .chart-container canvas {
         flex: 0 0 48%; /* Two charts per line */
+        height: 400px; /* Adjust height for better visibility on PC */
     }
 }
