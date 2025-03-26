@@ -119,3 +119,22 @@ footer {
         width: 30%;
     }
 }
+
+/* Accordion styles */
+.accordion .card-header {
+    background-color: #E91E63; /* Light primary */
+    color: white; /* Light onPrimary */
+}
+
+.accordion .btn-link {
+    color: white; /* Light onPrimary */
+    text-decoration: none;
+}
+
+.accordion .btn-link:hover {
+    color: #FFABF4; /* Dark secondary */
+}
+
+.accordion .card-body {
+    background-color: #FFD9E3; /* Light primaryContainer */
+}
