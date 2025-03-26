@@ -141,9 +141,15 @@ footer {
 
 /* Chart styles */
 canvas {
-    width: 800px !important; /* O el tamaño que prefieras */
-    height: 800px !important;
-    
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 769px) {
+    canvas {
+        max-width: 50%;
+    }
 }
 
 @media (min-width: 769px) {
