@@ -154,29 +154,15 @@ canvas {
 
 @media (min-width: 769px) {
     .chart-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Add spacing between charts */
-        width: 100%;
-        max-width: 1200px;
-        margin: auto; /* Center the container */
+        width: 60%; /* O el tamaño que prefieras */
+    max-width: 600px;
+    margin: auto; /* Centrarlo */
+        justify-content: space-between;
+        display: flexbox;
     }
-    .chart-container canvas {
-        flex: 0 0 45%; /* Two charts per row */
-        height: 300px; /* Adjust height for better visibility */
-    }
-}
 
-@media (max-width: 768px) {
-    .chart-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px; /* Add spacing between charts */
-    }
     .chart-container canvas {
-        width: 90%; /* Full width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        flex: 0 0 48%; /* Two charts per line */
+        height: 400px; /* Adjust height for better visibility on PC */
     }
 }
