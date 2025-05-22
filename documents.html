@@ -166,7 +166,33 @@
                     </div>
                     <div id="collapsePrototipar" class="collapse" aria-labelledby="headingPrototipar" data-parent="#designThinkingAccordion">
                         <div class="card-body">
-                           
+    <h4>¿Cómo se hizo?</h4>
+    <p>Empezamos a definir las funcionalidades clave y a implementarlas paso a paso. Por ejemplo, la parte de autenticación con usuarios, la sección de comunidad donde la gente puede postear, módulos de información sobre salud reproductiva y mental, y algo interesante como compartir la ubicación. A medida que construíamos cada parte, nos encontrábamos con bugs – errores de programación típicos. Nuestra tarea era diagnosticarlos (viendo los mensajes de error, entendiendo qué esperaba una parte del código de otra) y aplicar soluciones, a veces refactorizando (reorganizando el código) como hicimos con la lógica de actualizar la ubicación para que no cambiara el código de compartición. Fue un ciclo constante de añadir código, probar, encontrar errores y corregir.</p>
+    <h4>¿Qué partes principales tiene la app?</h4>
+    <ul>
+        <li><strong>Autenticación:</strong> La puerta de entrada. Permite a los usuarios crear cuentas y acceder a la app.</li>
+        <li><strong>Comunidad:</strong> Un espacio social donde los usuarios logeados pueden ver publicaciones de otros, interactuar con ellas (dar likes, comentar) y compartir sus propios pensamientos o experiencias.</li>
+        <li><strong>Salud Reproductiva:</strong> Una sección informativa. Aquí clasificamos y mostramos información relevante sobre el ciclo menstrual, anticoncepción, embarazo y otros temas importantes de forma organizada.</li>
+        <li><strong>Salud Mental:</strong> Similar a la anterior, pero enfocada en el bienestar psicológico, con temas como ansiedad, manejo del estrés, etc.</li>
+        <li><strong>Compartir Ubicación:</strong> Una funcionalidad que permite a un usuario enviar un código a otra persona para que esta última pueda ver su ubicación actual en un mapa.</li>
+        <li><strong>Seguimiento Menstrual:</strong> (Aunque no profundizamos en su implementación, está definida como una parte clave en la navegación).</li>
+    </ul>
+    <h4>¿Qué tecnologías incluye y por qué las usamos?</h4>
+    <ul>
+        <li><strong>Kotlin:</strong> Es el lenguaje de programación principal. Lo elegimos porque es moderno, conciso y hace que escribir código Android sea mucho más agradable y eficiente que con Java.</li>
+        <li><strong>Jetpack Compose:</strong> Para construir toda la interfaz de usuario. Es el enfoque moderno y nativo de Android para crear UIs declarativas con Kotlin. Facilita mucho la creación de interfaces reactivas y complejas con menos código.</li>
+        <li><strong>Firebase:</strong> Una plataforma backend "sin servidor".
+            <ul>
+                <li><strong>Firebase Authentication:</strong> Lo usamos para manejar todo el registro y login de usuarios. Simplifica enormemente la gestión de usuarios sin tener que montar nuestro propio backend de autenticación.</li>
+                <li><strong>Firebase Firestore:</strong> Nuestra base de datos NoSQL en la nube. Es genial porque es fácil de usar y, lo más importante para la comunidad y la ubicación compartida, ofrece actualizaciones en tiempo real. Cuando alguien postea o mueve su ubicación, los demás ven el cambio casi al instante gracias a sus "snapshot listeners".</li>
+            </ul>
+        </li>
+        <li><strong>Kotlin Coroutines y Flow:</strong> Estas herramientas de Kotlin van de la mano con Compose y Firebase. Las Coroutines nos permiten hacer operaciones que tardan mucho (como leer de la base de datos o pedir la ubicación) de forma asíncrona sin bloquear la interfaz. Los Flow son perfectos para manejar flujos de datos que cambian con el tiempo, como la lista de posts en la comunidad o la ubicación que se actualiza; el UI "observa" este Flow y se actualiza solo cuando llegan datos nuevos.</li>
+        <li><strong>Google Maps SDK for Android y Maps Compose:</strong> Obviamente, para mostrar el mapa en la función de ubicación. Usamos la biblioteca específica para Compose (maps-compose) porque se integra perfectamente con nuestra UI construida en Compose.</li>
+        <li><strong>MVVM (Model-View-ViewModel) y Patrón Repositorio:</strong> No son tecnologías en sí, sino patrones de arquitectura. Nos ayudan a organizar el código: el ViewModel prepara los datos para la vista (Compose), y los Repositorios saben de dónde obtener esos datos (Firestore, servicios de ubicación, etc.), manteniendo la lógica de negocio separada de la UI. Esto hace que el código sea más limpio, mantenible y más fácil de probar.</li>
+        <li><strong>Gradle Kotlin Script (.kts):</strong> Es cómo configuramos y gestionamos todas las librerías y la construcción del proyecto. Usar Kotlin Script es un enfoque más moderno y type-safe comparado con el Groovy tradicional.</li>
+    </ul>
+    <p>En resumen, construimos Aurora de forma iterativa, pieza a pieza, resolviendo problemas a medida que aparecían. Nos basamos en tecnologías modernas de Android y Firebase para tener un backend potente y una UI reactiva con menos esfuerzo, organizando el código de forma limpia con patrones de arquitectura establecidos.</p>
                         </div>
                     </div>
                 </div>
